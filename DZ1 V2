@@ -1,0 +1,46 @@
+1  
+ls -l | perl -e ' $eraseFirstString=<>;  while(<>){for($w=0;$w<8;$w++){s/\s+/;/;}print $_;}' > text.txt
+
+2  
+cat 'text.txt' | perl -lnaF';' -e 'if( $F[4] >= 1024**2 ){ print $F[8];$col++; }}{print  $.; print $col;'
+
+
+
+3 
+use strict;
+use Data::Dumper;
+use DDP; 
+@allmas=();
+$i; 
+while(<>){@mas = split/;/; push @{$allmas[$i]},@mas;}  
+{print Dumper \@allmas; p @allmas;}
+
+4
+l
+w @a
+w @f
+n
+n
+n
+n
+n
+n
+n
+n
+n
+n
+n
+n
+n
+n
+n
+n
+n
+n
+n
+n
+n
+n
+n
+c
+q
